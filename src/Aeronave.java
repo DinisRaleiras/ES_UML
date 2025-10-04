@@ -1,3 +1,11 @@
+/*
+@author Dinis Raleiras 67819
+@author Leandro Rodrigues
+@author Luís Muacho
+
+FCT UNL Licenciatura em Engenharia Informática
+Engenharia de Software 2025/2026
+ */
 package src;
 
 public class Aeronave {
