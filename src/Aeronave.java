@@ -1,7 +1,7 @@
 /*
 @author Dinis Raleiras 67819
 @author Leandro Rodrigues 68211
-@author Luís Muacho
+@author Luís Muacho 6
 
 FCT UNL Licenciatura em Engenharia Informática
 Engenharia de Software 2025/2026
