@@ -17,6 +17,7 @@ public class VooDireto extends Voo {
 
     @Override
     public double calcularCusto() {
-        return 0;
+        double valorFinal = custoBase + (custoBase * companhia.getTaxaLucro());
+        return valorFinal;
     }
 }

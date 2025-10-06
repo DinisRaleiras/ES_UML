@@ -13,14 +13,18 @@ import java.util.List;
 
 public class VooIndireto extends Voo {
     private List<Aeroporto> escalas;
+    private double taxaReabastecimento; // Taxa adicional por escala
 
     VooIndireto(int number, Date horaPartida, String portaEmbarque, double custoBase, CompanhiaAerea companhia, Aeronave aeronave, List<Aeroporto> escalas) {
         super(number, horaPartida, portaEmbarque, custoBase, companhia, aeronave);
         this.escalas = escalas;
+        taxaReabastecimento = 0.2;
     }
 
     @Override
     public double calcularCusto() {
-        return 0;
+        double custoComLucro = custoBase + (custoBase * companhia.getTaxaLucro());
+        double custoFinal = custoComLucro + (taxaReabastecimento * escalas.size());
+        return custoFinal;
     }
 }
