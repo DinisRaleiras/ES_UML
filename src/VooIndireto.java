@@ -27,4 +27,12 @@ public class VooIndireto extends Voo {
         double custoFinal = custoComLucro + (taxaReabastecimento * escalas.size());
         return custoFinal;
     }
+
+    public double getTaxaReabastecimento() {
+        return taxaReabastecimento;
+    }
+    public void adicionarEscala(Aeroporto aeroporto) {
+         escalas.add(aeroporto);
+    }
+
 }
