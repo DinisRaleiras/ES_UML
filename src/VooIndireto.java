@@ -24,8 +24,8 @@ public class VooIndireto extends Voo {
     @Override
     public double calcularCusto() {
         double custoComLucro = custoBase + (custoBase * companhia.getTaxaLucro());
-        double custoFinal = custoComLucro + (taxaReabastecimento * escalas.size());
-        return custoFinal;
+        return custoComLucro + (taxaReabastecimento * escalas.size());
+
     }
 
     public double getTaxaReabastecimento() {
